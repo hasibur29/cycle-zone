@@ -1,0 +1,404 @@
+:root{
+    --primary_color:#274d5a ;
+    --secondary_color:#f7c17b;
+    --text_color:#dfdfdf;
+    --white:#ffffff;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background: #ffffff;
+}
+/* ^common css part start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+img{
+  vertical-align: middle;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.w-100{
+    width: 100%;
+}
+.container{
+    padding: 0 15px;
+    /* border: 1px solid red; */
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.heading p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ^common css part End *
+/* ^heading part start */
+#heading-section{
+    background-image: linear-gradient(-13deg, #ffffff 23%, #274d5a 23%);
+    position: relative;
+}
+#heading-section::after{
+    content: "";
+    background:rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23%;
+    height: 100%;
+}
+.main-offcanvas{
+    height: 450px !important;
+}
+.main-navbar ul li .active{
+    color: var(--secondary_color) !important;
+}
+.main-navbar ul li .nav-link:hover{
+    color:#f7c17b !important;
+}
+.hover-a ul li .nav-link:hover{
+    color:#f7c17b !important;
+}
+/* ~banner part start */
+.banner-text h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.banner-text .inner-text h1 span{
+    color: var(--white);
+    display: block;
+}
+.banner-text button{
+    width: 130px;
+    height: 40px;
+    background: var(--secondary_color);
+    transition: all linear 0.3s;
+}
+.banner-text button:hover{
+    width: 120px;
+    height: 40px;
+    transition: all linear 0.3s;
+    background: var(--white) !important;
+    color: #111111 !important;
+    border: 1px solid var(--primary_color) !important;
+}
+.banner-slide .prev-arrow{
+    width: 50px;
+    height:50px;
+    background:var(--secondary_color);
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.banner-slide .next-arrow{
+    width: 50px;
+    height: 50px; 
+    background: var(--primary_color);
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.banner-slide .next-arrow:hover{
+    background: var(--secondary_color);
+}
+#hero-part{
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
+.cycle-img::before{
+    content: "BEST";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--secondary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary_color);
+    font-weight: 800;
+    left: 10%;
+    top: 0px;
+    z-index: 3;
+}
+/* ~banner part End */
+/* ^heading part End */
+/* ^our cycle start */
+.cycle-image{
+  position: relative;
+}
+.cycle-image::after{
+    content: "";
+    width:85%;
+    height: 100%;
+    background: var(--secondary_color);
+    clip-path: polygon(0 0, 75% 8%, 75% 80%, 0 95%);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.cycle-image::before{
+    content: "01";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 2px solid var(--white);
+    background: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    left: 30%;
+    top: 10px;
+}
+.cycle-image img{
+    width:90%;
+    z-index: 1;
+    padding-top: 60px;
+    margin-left: 20px;
+    transform: scale(0.9);
+}
+.cycle-text .heading .line{
+    height:1px !important;
+    background-color:var(--primary_color);
+}
+.cycle-text button{
+    width: 140px;
+    height: 50px;
+    background: var(--primary_color);
+    transition: all linear 0.3s;
+}
+.cycle-text button:hover{
+    width: 130px;
+    background: var(--secondary_color);
+    transition: all linear 0.3s;
+}
+.cycle-image-2{
+    position: relative;
+}
+.cycle-image-2 .number{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 2px solid var(--white);
+    background: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    top: 0;
+    left: 30%;
+}
+.cycle-image-2::after{
+    content: "";
+    width:75%;
+    height:100%;
+    background: var(--secondary_color);
+    clip-path: polygon(0 0, 75% 8%, 75% 85%, 0 100%);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    transform: translateX(40px);
+}
+.cycle-image-2 img{
+    width: 90%;
+    z-index: 1;
+    margin-top: 30px;
+    transform:translateX(25px);
+}
+.cycle-image-3{
+    position: relative;
+}
+.cycle-image-3 .number{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: 2px solid var(--white);
+    background: var(--primary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    top: 0;
+    left: 25%;
+}
+.cycle-image-3::after{
+    content: "";
+    width:75%;
+    height:100%;
+    background: var(--secondary_color);
+    clip-path: polygon(0 0, 75% 8%, 75% 85%, 0 100%);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.cycle-image-3 img{
+    width: 90%;
+    z-index: 1;
+    margin-top: 30px;
+}
+#cycle .read-more button{
+    width: 150px;
+    height: 50px;
+    background: var(--secondary_color);
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+#cycle .read-more button:hover{
+    width: 140px;
+    height: 50px;
+    background: var(--primary_color);
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+/* ^our cycle End */
+/* ^about cycle store start */
+#store{
+    background: url(../images/about-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+}
+#store .heading p{
+    width: 85%;
+}
+#store .store-image::before{
+    content: "";
+    width:80%;
+    height: 100%;
+    position: absolute;
+    background: var(--white);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+}
+.store-image img{
+    transform: scale(.9);
+}
+#store button{
+    background: var(--secondary_color);
+    width: 140px;
+    height: 40px;
+    bottom: -20px;
+    left: 40%;
+    transition: all linear 0.3s;
+}
+#store button:hover{
+    width: 130px;
+    background: var(--primary_color);
+    transition: all linear 0.3s;
+}
+/* ^about cycle store End */
+/* ^customer says start */
+#customer .customer-slide{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
+    position: relative;
+}
+.customer-text{
+    box-sizing: border-box;
+}
+.customer-slide .prev-arrow{
+    width: 50px;
+    height:50px;
+    background:var(--secondary_color);
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.customer-slide .next-arrow{
+    width: 50px;
+    height: 50px; 
+    background: var(--primary_color);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.customer-slide .next-arrow:hover{
+    background: var(--secondary_color);
+}
+/* ^customer says End */
+/* ^news part start */
+#news{
+    background: var(--primary_color);
+}
+#news .heading p{
+    width: 75%;
+}
+.news-content .card{
+    transition: linear 0.3s;
+}
+.news-content .card:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.856);
+    transition: linear 0.4s;
+    transform: translateY(-15px);
+}
+.news-content .card .card-body span p{
+    opacity: 0.2;
+    transition: linear 0.3s;
+    padding-top: 5px;
+}
+.news-content .card:hover .card-body span p{
+    opacity: 1;
+    transition: linear 0.3s;
+}
+.form-part{
+    width: 65%;
+}
+.form-part button{
+    width: 150px;
+    height: 50px;
+    background: var(--secondary_color);
+    transition: all linear 0.3s;
+}
+.form-part button:hover{
+    width: 140px;
+    transition: all linear 0.3s;
+    background: var(--white);
+    color: var(--primary_color) !important;
+}
+.footer-form form button{
+    width: 160px;
+    height: 45px;
+    background: var(--secondary_color);
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+.footer-form form button:hover{
+    background: var(--white);
+    width: 150px !important;
+    transition: all linear 0.3s;
+    color: rgba(0, 0, 0, 0.473);
+}
+.footer-contact  ul li a:hover{
+    color: var(--secondary_color) !important;
+}
+/* ^news part End */

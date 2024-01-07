@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cycle Zone</title>
     <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- animate -->
-    <link rel="stylesheet" href="css/animate.css">
     <!-- favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
@@ -30,443 +30,545 @@
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-    <!-- ^heading part start -->
-    <section id="heading-section">
-      <!-- ~navbar part start -->
-        <div class="row">
-          <div class="col-12 text-end d-lg-none z-3">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-              <img src="images/toggle-icon.png" alt="">
+    <div class="hero-part">
+      <!-- navbar part start -->
+      <header>
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <img src="images/toggle-icon1.png" alt="">
+        </button>
+        <div class="offcanvas offcanvas-end w-100 d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header bg-dark">
+            <button type="button" class="bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark" style="color: #ce8909; font-size: xx-large;"></i>
             </button>
-            <div class="offcanvas main-offcanvas offcanvas-end w-100 h-25 z-1" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-              <div class="offcanvas-header bg-dark justify-content-end">
-                <div class="logo w-100 text-center">
-                  <a href="#">
-                    <img src="images/logo.png" alt="">
-                  </a>
-                </div> 
-                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body p-0 hover-a bg-dark">
-                <ul class="bg-dark z-1 d-flex flex-column gap-3 w-100  text-center p-0">
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">Home</a></li>
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">About</a></li>
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">Our cycle</a></li>
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">Shop</a></li>
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">News</a></li>
-                  <li class="d-block"><a class="text-white fw-light fs-6 nav-link" href="#">Contact us</a></li>
-                </ul>
-                <div class="navbar-icon w-100  mt-3">
-                  <ul class="d-flex w-25 m-auto justify-content-between">
-                    <li><a class="nav-link fs-6 fw-light text-white" href="#">Login</a></li>
-                    <li><a href="#">
-                      <img src="images/trolly-icon.png" alt="trolly-icon">
-                    </a></li>
-                    <li><a href="#">
-                      <img src="images/search-icon.png" alt="trolly-icon">
-                    </a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="col-12 d-none d-lg-block z-3 wow flipInY">
-            <nav class="navbar main-navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <a class="navbar-brand pt-0" href="#">
+          <div class="offcanvas-body h-100 bg-dark">
+            <nav class="navbar main-navbar d-flex flex-column">
+                <a class="navbar-brand p-0 m-0" href="#">
                   <img src="images/logo.png" alt="">
                 </a>
-                <div class="collapse navbar-collapse " id="navbarScroll">
-                  <ul class="navbar-nav m-auto my-2 w-100 gap-3 gap-xl-4 justify-content-center my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <ul class="navbar-nav main-nav pt-4 gap-xl-5 m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6 active "aria-current="page" href="#">Home</a>
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6" href="#">About</a>
+                      <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6" href="#">Our Cycle</a>
+                      <a class="nav-link" href="#">Our cycle</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6" href="#">Shop</a>
+                      <a class="nav-link" href="#">Shop</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6" href="#">News</a>
+                      <a class="nav-link" href="#">New</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white fw-light fs-6" href="#">Contact us</a>
+                      <a class="nav-link" href="#">Contact us</a>
                     </li>
                   </ul>
-                  <div class="navbar-icon w-25 mt-3">
-                    <ul class="d-flex justify-content-between">
-                      <li><a class="text-white fw-light fs-6 text-white fw-light fs-6 nav-link"  href="#">Login</a></li>
-                      <li><a href="#">
-                        <img src="images/trolly-icon.png" alt="trolly-icon">
-                      </a></li>
-                      <li><a href="#">
-                        <img src="images/search-icon.png" alt="trolly-icon">
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
+                  <div class="navbar-icon pt-4">
+                  <ul class="d-flex gap-5">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#"><img src="images/trolly-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/search-icon.png" alt=""></a></li>
+                </ul>
               </div>
             </nav>
           </div>
         </div>
-        <div id="hero-part">
-              <div class="container-fluid">
-                <div class="row banner-slide position-relative z-1">
-                    <div class="col-12">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-12 col-md-7 order-2 order-md-1 py-4 wow fadeInLeftBig">
-                            <div class="cycle-img position-relative">
-                              <img src="images/img-1.png" class="img-fluid w-100" alt="">
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5 z-1 order-1 order-md-2 wow fadeInRightBig">
-                            <div class="banner-text text-start">
-                              <h1 class="text-white">New <span class="d-block">Model</span> Cycle</h1>
-                              <p class="text-white fw-semibold fs-6">It is a long established fact that a reader will be distracted by the readable content</p>
-                              <button type="button" class="btn text-uppercase fw-lighter  text-white rounded-0">Shop now</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-12 col-md-7 order-2 order-md-1 py-4">
-                            <div class="cycle-img position-relative">
-                              <img src="images/img-1.png" class="img-fluid w-100" alt="">
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5 z-1 order-1 order-md-2">
-                            <div class="banner-text text-start">
-                              <h1 class="text-white">New <span class="d-block">Model</span> Cycle</h1>
-                              <p class="text-white fw-semibold fs-6">It is a long established fact that a reader will be distracted by the readable content</p>
-                              <button type="button" class="btn text-uppercase fw-lighter  text-white rounded-0">Shop now</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-12 col-md-7 order-2 order-md-1 py-4">
-                            <div class="cycle-img position-relative">
-                              <img src="images/img-1.png" class="img-fluid w-100" alt="">
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5 z-1 order-1 order-md-2">
-                            <div class="banner-text text-start">
-                              <h1 class="text-white">New <span class="d-block">Model</span> Cycle</h1>
-                              <p class="text-white fw-semibold fs-6">It is a long established fact that a reader will be distracted by the readable content</p>
-                              <button type="button" class="btn text-uppercase fw-lighter  text-white rounded-0">Shop now</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-        </div>
-    </section>
-    <!-- ^heading part End -->
-    <!-- ^our cycle start -->
-    <section id="cycle" class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <div class="heading wow rotateIn">
-              <h2>Our Cycle</h2>
-              <p>It is a long established fact that a reader will be distracted by the</p>
-            </div>
-          </div>
-          <div class="col-12 py-5">
-            <div class="row gy-5 cycle-content text-center">
-              <div class="col-12 col-md-6  cycle-image p-1 wow fadeInUp">
-                 <img src="images/img-2.png" class="img-fluid" alt="">
-              </div>
-               <div class="col-12 col-md-6 p-1 wow fadeInUp">
-                <div class="cycle-text text-start d-flex flex-column justify-content-center h-100"> 
-                  <div class="heading text-end d-flex justify-content-between align-items-center">
-                    <div class="line w-25"></div>
-                    <h2>Cycle</h2>
-                  </div>
-                  <p class="text-black text-start fs-6 pt-4 pt-lg-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                  <div class="buy-btn d-flex justify-content-between align-items-center pt-4 pt-lg-5">
-                    <button type="button" class="btn rounded-0 text-white text-uppercase py-2 px-3 fw-lighter">Buy now</button>
-                    <span class="text-black fw-bold fs-3">Price <span class="text-warning">$ </span><span>200</span></span>
-                  </div>
-                </div>
+        <nav class="navbar main-navbar navbar-expand-lg d-none d-lg-block ">
+          <div class="container-fluid">
+            <a class="navbar-brand p-0 m-0" href="#">
+              <img src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="">
+                <img src="images/toggle-icon.png" alt="">
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav main-nav pt-4 gap-xl-5 m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our cycle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+              <div class="navbar-icon pt-4">
+                <ul class="d-flex gap-5">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#"><img src="images/trolly-icon.png" alt=""></a></li>
+                  <li><a href="#"><img src="images/search-icon.png" alt=""></a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-12 py-5">
-            <div class="row gy-5 cycle-content text-center">
-              <div class="col-12 col-md-6 p-1 order-2 order-md-1 wow rotateInDownLeft">
-                <div class="cycle-text text-start d-flex flex-column justify-content-center h-100"> 
-                  <div class="heading text-end d-flex justify-content-between align-items-center">
-                    <div class="line w-25"></div>
-                    <h2>Style Cycle</h2>
-                  </div>
-                  <p class="text-black text-start fs-6 pt-4 pt-lg-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                  <div class="buy-btn d-flex justify-content-between align-items-center pt-4 pt-lg-5">
-                    <button type="button" class="btn rounded-0 text-white text-uppercase py-2 px-3 fw-lighter">Buy now</button>
-                    <span class="text-black fw-bold fs-3">Price <span class="text-warning">$ </span><span>200</span></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 cycle-image-2 py-5 d-flex justify-content-center order-1 order-md-2 wow rotateInDownRight">
-                <div class="number z-3">02</div>
-                 <img src="images/img-3.png" class="img-fluid" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-12 py-5">
-            <div class="row gy-5 cycle-content text-center">
-              <div class="col-12 col-md-6 cycle-image-3 py-5 d-flex justify-content-center wow rotateInUpRight">
-                <div class="number z-3">03</div>
-                 <img src="images/img-4.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-md-6 p-1 wow rotateInUpLeft">
-                <div class="cycle-text text-start d-flex flex-column justify-content-center h-100"> 
-                  <div class="heading text-end  d-flex justify-content-between align-items-center">
-                    <div class="line w-25"></div>
-                    <h2>Mordern Cycle</h2>
-                  </div>
-                  <p class="text-black text-start fs-6 pt-4 pt-lg-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                  <div class="buy-btn d-flex justify-content-between align-items-center pt-4 pt-lg-5">
-                    <button type="button" class="btn rounded-0 fw-light text-white text-uppercase fs-6 py-2 px-3 fw-lighter">Buy now</button>
-                    <span class="text-black fw-bold fs-3">Price <span class="text-warning">$ </span><span>200</span></span>
+        </nav>
+      </header>
+      <div class="banner-part pt-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="banner-slide">
+              <div class="col-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                      <div class="banner-image">
+                        <img src="images/img-1.png" class="img-fluid w-100" alt="">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                      <div class="banner-text text-center text-md-start">
+                        <h1>New <span class="d-inline-block d-md-block">Model</span> Cycle</h1>
+                        <p class="m-auto m-md-0">It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="banner-btn m-auto m-md-0">
+                          <a href="#">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 pt-5 wow flipInX">
-                <div class=" read-more d-flex justify-content-center align-items-center">
-                  <button type="button" class="btn rounded-0 text-uppercase fw-lighter">Read More</button>
+              <div class="col-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                      <div class="banner-image">
+                        <img src="images/img-1.png" class="img-fluid w-100" alt="">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                      <div class="banner-text text-center text-md-start">
+                        <h1>New <span class="d-inline-block d-md-block">Model</span> Cycle</h1>
+                        <p class="m-auto m-md-0">It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="banner-btn m-auto m-md-0">
+                          <a href="#">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                      <div class="banner-image">
+                        <img src="images/img-1.png" class="img-fluid w-100" alt="">
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                      <div class="banner-text text-center text-md-start">
+                        <h1>New <span class="d-inline-block d-md-block">Model</span> Cycle</h1>
+                        <p class="m-auto m-md-0">It is a long established fact that a reader will be distracted by the readable content</p>
+                        <div class="banner-btn m-auto m-md-0">
+                          <a href="#">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ^our cycle End -->
-    <!-- ^about cycle store start -->
-    <section id="store">
+      <!-- navbar part End -->
+    </div>
+    <!-- hero part End -->
+    <!-- our cycle part start -->
+    <section id="cycle-section">
       <div class="container">
-        <div class="row position-relative">
-          <div class="col-12 d-flex justify-content-center wow rotateIn">
-            <div class="heading text-center py-5">
-              <h2 class="text-white fw-bold pb-3">About Our cycle Store</h2>
-              <p class="text-white fw-lighter m-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        <div class="row">
+          <div class="col-12">
+            <div class="cycle-header">
+              <div class="common-heading text-center">
+                <h2>Our Cycle</h2>
+                <p class="pt-2">It is a long established fact that a reader will be distracted by the</p>
+              </div>
             </div>
           </div>
-          <div class="col-12 pb-5 wow fadeInUpBig ">
-            <div class="store-image  position-relative w-50 m-auto ">
-               <img src="images/img-5.png" class="img-fluid" alt="">
+          <div class="col-12 py-5">
+            <div class="main-cycle">
+              <div class="row">
+                <div class="col-12 bg-white col-md-6">
+                  <div class="cycle-image">
+                    <img src="images/img-2.png" class="img-fluid w-100" alt="">
+                  </div>
+                </div>
+                <div class="col-12 bg-white col-md-6 pt-4 pt-md-0">
+                  <div class="cycle-text">
+                   <div class="header-part">
+                    <div class="line"></div>
+                    <div class="common-heading">
+                      <h2>cycle</h2>
+                    </div>
+                   </div>
+                   <div class="common-heading">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                   </div>
+                   <div class="inner-button">
+                    <div class="common-btn">
+                      <a href="#">Shop Now</a>
+                    </div>
+                    <div class="price">
+                      <span>price</span>
+                      <span>$200</span>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button type="button" class="btn text-uppercase text-white rounded-0 position-absolute z-1 wow flipInX">Read more</button>
+          </div>
+          <div class="col-12 py-5">
+            <div class="main-cycle">
+              <div class="row">
+                <div class="col-12 bg-white col-md-6 order-2 order-md-1 pt-4 pt-md-0">
+                  <div class="cycle-text">
+                   <div class="header-part">
+                    <div class="line"></div>
+                    <div class="common-heading">
+                      <h2>style cycle</h2>
+                    </div>
+                   </div>
+                   <div class="common-heading">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                   </div>
+                   <div class="inner-button">
+                    <div class="common-btn">
+                      <a href="#">Shop Now</a>
+                    </div>
+                    <div class="price">
+                      <span>price</span>
+                      <span>$200</span>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-12 bg-white col-md-6 order-1 order-md-2">
+                  <div class="cycle-image-2">
+                    <img src="images/img-3.png" class="img-fluid w-100" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-5">
+            <div class="main-cycle">
+              <div class="row">
+                <div class="col-12 bg-white col-md-6">
+                  <div class="cycle-image-2">
+                    <img src="images/img-4.png" class="img-fluid w-100" alt="">
+                  </div>
+                </div>
+                <div class="col-12 bg-white col-md-6 pt-4 pt-md-0">
+                  <div class="cycle-text">
+                   <div class="header-part">
+                    <div class="line"></div>
+                    <div class="common-heading">
+                      <h2>Mordern Cycle</h2>
+                    </div>
+                   </div>
+                   <div class="common-heading">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                   </div>
+                   <div class="inner-button">
+                    <div class="common-btn">
+                      <a href="#">Shop Now</a>
+                    </div>
+                    <div class="price">
+                      <span>price</span>
+                      <span>$200</span>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pb-5">
+            <div class="common-btn d-flex justify-content-center">
+              <a href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ^about cycle store End -->
-    <!-- ^customer-says start -->
-    <section id="customer" class="bg-white py-5">
-      <div class="container-fluid">
+    <!-- our cycle part End -->
+    <!-- cycle store part start -->
+    <section id="store-section">
+      <div class="container">
         <div class="row">
-          <div class="col-12 wow rotateIn">
-            <div class="heading py-5 text-center">
-              <h2>says customers</h2>
+          <div class="col-12">
+            <div class="store-header">
+              <div class="common-heading">
+                <h2>About Our cycle Store</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center py-4">
+            <div class="store-image">
+              <img src="images/img-5.png" class="img-fluid w-100" alt="">
             </div>
           </div>
           <div class="col-12">
-            <div class="container  p-0">
-              <div class="row customer-slide">
-                <div class="col-12 p-2 wow slideInRight ">
-                  <div class="row">
-                    <div class="col-12 col-md-4">
-                      <img src="images/client-img.png" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="col-12 col-md-8">
-                      <div class="customer-text pt-5">
-                        <img src="images/quote-icon.png" alt="">
-                        <p class="pt-3 text-black-50">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                        <h4 class="fs-5 text-black fw-light">Channery</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 p-2 ">
-                  <div class="row">
-                    <div class="col-12 col-md-4">
-                      <img src="images/client-img.png" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="col-12 col-md-8">
-                      <div class="customer-text pt-5">
-                        <img src="images/quote-icon.png" alt="">
-                        <p class="pt-3 text-black-50">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                        <h4 class="fs-5 text-black fw-light">Channery</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 p-2 ">
-                  <div class="row">
-                    <div class="col-12 col-md-4">
-                      <img src="images/client-img.png" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="col-12 col-md-8">
-                      <div class="customer-text pt-5">
-                        <img src="images/quote-icon.png" alt="">
-                        <p class="pt-3 text-black-50">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-                        <h4 class="fs-5 text-black fw-light">Channery</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="common-btn  d-flex justify-content-center">
+              <a href="#" class="">Read more</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ^customer-says End -->
-    <!-- ^news part start -->
-    <section id="news">
+    <!-- cycle store part End -->
+    <!-- customer part start -->
+    <section id="customer-section">
       <div class="container">
         <div class="row">
-          <div class="col-12 py-5">
-            <div class="heading text-center wow wow rotateIn">
-              <h2 class="text-white fw-semibold">News</h2>
-              <p class="m-auto text-white fw-lighter pt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+          <div class="col-12">
+            <div class="customer-header">
+              <div class="common-heading text-center">
+                <h2>says Customers</h2>
+              </div>
             </div>
           </div>
-          <div class="col-12 py-5">
-            <div class="row row-cols-1 news-content row-cols-md-3 g-4">
-              <div class="col wow slideInLeft">
-                <div class="card h-100 rounded-0 border-0">
-                    <div class="new-img">
-                    <img src="images/img-6.png" class="card-img-top img-fluid w-100 rounded-0" alt="...">
-                    </div>
-                    <div class="card-body">
-                    <h5 class="card-title">Speed cycle</h5>
-                    <span class="d-flex justify-content-between">
-                      <p>Post by: Deb</p><p>20-10-2009</p>
-                    </span>
-                    <p class="card-text fs-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+          <div class="col-12">
+            <div class="customer-slide">
+              <div class="inner-item">
+                  <div class="img">
+                    <img src="images/client-1.png" class="img-fluid  w-100" alt="">
                   </div>
+                <div class="text">
+                  <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                  <h4>Channery</h4>
                 </div>
               </div>
-              <div class="col wow fadeInUpBig">
-                <div class="card h-100 rounded-0 border-0">
-                   <div class="new-img">
-                    <img src="images/img-7.png" class="card-img-top img-fluid w-100 rounded-0" alt="...">
-                   </div>
-                   <div class="card-body">
-                    <h5 class="card-title">Speed cycle</h5>
-                    <span class="d-flex justify-content-between">
-                      <p>Post by: Deb</p><p>20-10-2009</p>
-                    </span>
-                    <p class="card-text fs-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+              <div class="inner-item">
+                  <div class="img">
+                    <img src="images/client-2.png" class="img-fluid  w-100" alt="">
                   </div>
+                <div class="text">
+                  <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                  <h4>Channery</h4>
                 </div>
               </div>
-              <div class="col wow slideInRight">
-                <div class="card h-100 border-0 rounded-0">
-                    <div class="new-img">
-                    <img src="images/img-8.png" class="card-img-top img-fluid w-100 rounded-0" alt="...">
-                    </div>
-                    <div class="card-body">
-                    <h5 class="card-title">Speed cycle</h5>
-                    <span class="d-flex justify-content-between">
-                      <p>Post by: Deb</p><p>20-10-2009</p>
-                    </span>
-                    <p class="card-text fs-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+              <div class="inner-item">
+                  <div class="img">
+                    <img src="images/client-3.png" class="img-fluid  w-100" alt="">
                   </div>
+                <div class="text">
+                  <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                  <h4>Channery</h4>
+                </div>
+              </div>
+              <div class="inner-item">
+                  <div class="img">
+                    <img src="images/client-2.png" class="img-fluid  w-100" alt="">
+                  </div>
+                <div class="text">
+                  <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                  <h4>Channery</h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 py-5">
-            <div class="row">
-              <div class="col-12 pt-5">
-                <div class="heading text-center wow rotateIn">
-                  <h2 class="text-white">A Call Back</h2>
-                </div>
-              </div>
-              <div class="col-12 wow rollIn">
-                   <div class="form-part m-auto text-center">
-                    <input type="text" class="form-control mt-4 rounded-5 p-3 p-sm-3 p-md-4 border-0" placeholder="Name" aria-label="name">
-                    <input type="email" class="form-control mt-4 rounded-5 p-3 p-sm-3 p-md-4 border-0" placeholder="Email" aria-label="email">
-                    <input type="text" class="form-control mt-4 rounded-5 p-3 p-sm-3 p-md-4 border-0" placeholder="Phone" aria-label="phone">
-                    <textarea class="message w-100 mt-4 rounded-5 p-2 p-sm-3 p-md-4" placeholder="Message" rows=""></textarea>
-                    <button type="button" class=" btn rounded-0 text-uppercase text-white fw-semibold mt-4 rounded-2 border-0">Send</button>
-                   </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row pt-5">
-        <div class="col-12 col-md-8 wow slideInRight">
-          <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233540.70002877375!2d90.44687174533692!3d23.851525850220487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1702824302067!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 pt-4 ps-4 ps-md-0 pb-4 pd-md-0 pt-md-0 wow slideInLeft">
-          <div class="footer-contact">
-            <ul class="ps-0 ps-sm-0">
-              <li class="d-flex gap-3">
-                <a href="#"><i class="fa-solid fa-location-dot fs-2" style="color: #ffffff;"></i></a>
-                <a href="#" class="text-white fs-6">Page when looking at its layout</a>
-              </li>
-              <li class="d-flex gap-3 mt-4">
-                <a href="#"><i class="fa-solid fa-phone fs-2" style="color: #ffffff;"></i></a>
-                <a href="#" class="text-white fs-6">Call Now +01 123467890</a>
-              </li>
-              <li class="d-flex gap-3 mt-4">
-                <a href="#"><i class="fa-solid fa-envelope fs-2" style="color: #ffffff;"></i></a>
-                <a href="#" class="text-white fs-6">demo@gmail.com</a>
-              </li>
-            </ul>
-            <ul class="ps-0 w-50 d-flex gap-4">
-              <li class="bg-white px-3 py-2 ">
-                <a href="#"><i class="fa-brands fa-facebook-f fs-3" ></i></a>
-              </li>
-              <li class="bg-white px-3 py-2 ">
-                <a href="#"><i class="fa-brands fa-twitter fs-3" ></i></a>
-              </li>
-              <li class="bg-white px-3 py-2 ">
-                <a href="#"><i class="fa-brands fa-linkedin-in fs-3" ></i></a>
-              </li>
-            </ul>
-            <div class="footer-form">
-              <form>
-                <input type="email" class=" d-block p-3 rounded-0 mb-4 border-0" name="" id="" placeholder="Enter Your Email">
-                <button type="button" class="btn rounded-0">Subcribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-12  bg-white py-4 text-center fs-6 wow flipInX">
-          <p class="mb-0">Copyright 2023 All Right Reserved By........</p>
         </div>
       </div>
     </section>
-    <!-- ^news part End -->
+    <!-- customer part End -->
+    <!-- news part start -->
+    <section id="news-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="news-header">
+              <div class="common-heading text-center">
+                <h2>News</h2>
+                <p class="py-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="main-news">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 g-md-4">
+                <div class="col">
+                  <div class="card  border-0">
+                    <img src="images/img-6.png" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Speed cycle</h5>
+                      <span class="d-flex justify-content-between">
+                        <p>Post by:Deb</p>
+                        <p>20-10-2009</p>
+                      </span>
+                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card  border-0">
+                    <img src="images/img-7.png" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Speed cycle</h5>
+                      <span class="d-flex justify-content-between">
+                        <p>Post by:Deb</p>
+                        <p>20-10-2009</p>
+                      </span>
+                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-md-none d-lg-block">
+                  <div class="card  border-0">
+                    <img src="images/img-8.png" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Speed cycle</h5>
+                      <span class="d-flex justify-content-between">
+                        <p>Post by:Deb</p>
+                        <p>20-10-2009</p>
+                      </span>
+                      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news part End -->
+    <!-- form part start -->
+    <section id="form-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-header">
+              <div class="common-heading text-center">
+                <h2 class="text-white">A call back</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-box">
+              <form>
+                <div class="input-group mb-4">
+                  <span class="input-group-text" id="">username</span>
+                  <input type="text" class="form-control" placeholder="" id="">
+                </div>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">email</span>
+                  <input type="email" class="form-control" placeholder="">
+                </div>
+                <div class="input-group mb-4">
+                  <span class="input-group-text" id="">phone</span>
+                  <input type="text" class="form-control" placeholder="" id="">
+                </div>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">Message</span>
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="common-btn d-flex justify-content-center">
+                  <a href="#" class="bg-white">send</a>
+                </div>
+               </form>
+              </div>
+            </div>
+            <div class="col-12 pt-4">
+              <div class="row">
+                <div class="col-12 col-md-7 col-lg-8">
+                  <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.4993028176!2d90.25487340238264!3d23.781067238672886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1704559482721!5m2!1sen!2sbd" width="100%" height="310px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 ps-2 ps-md-4 pt-4 pt-md-0">
+                  <div class="footer-icon">
+                    <ul class="d-flex flex-column gap-3">
+                      <li class="d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <p>Page when looking at its layout</p>
+                      </li>
+                      <li class="d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p>Call Now +99 112 446 101</p>
+                      </li>
+                      <li class="d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <p>xyz101@gamil.com</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="social-icon py-4">
+                    <ul class="d-flex gap-4">
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <form class="pt-4">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="">Email</span>
+                        <input type="email" class="form-control py-2" placeholder="" id="">
+                      </div>
+                      <div class="common-btn">
+                        <a href="#" class="bg-white py-3">subscribe</a>
+                      </div>
+                     </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right bg-white d-flex justify-content-center flex-wrap gap-2 py-3">
+        <p>copyright 2024 design by Hasibur</p>
+        <a href="https://hasiburrahmanbiplab.github.io/pack-and-go/" class="text-warning">view more design</a>
+      </div>
+    </section>
+    <!-- form part End -->
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- jquery link -->
     <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- wow js -->
-    <script src="js/wow.min.js"></script>
     <!-- font awesome -->
     <script src="js/all.min.js"></script>
     <!-- slick js  -->

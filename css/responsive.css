@@ -1,151 +1,67 @@
 @media (min-width:1400px) {
-    .heading h2 {
-        font-size: 45px;
-        font-weight: 600;
-    }
-    .banner-text h1 {
-        font-size: 70px;
-        font-weight: 600;
-    }
-    #store .heading p {
-        width: 65%;
-    }
+   
 }
 @media (min-width:1200px) and (max-width:1399.99px) {
-    .heading h2 {
-        font-size: 45px;
-        font-weight: 600;
-    }
-    .banner-text h1 {
-        font-size: 65px;
-        font-weight: 600;
-    }
+    
 }
 @media (min-width:992px) and (max-width:1199.99px) {
-    .footer-form form input{
-        width: 68% !important;
-    }
+    
 }
 @media (min-width:768px) and (max-width:991.99px) {
-    .banner-slide .prev-arrow{
-        width: 40px;
-        height:40px;
-        background:var(--secondary_color);
-        position: absolute;
-        bottom: 80px;
-        right: 10px;
-        z-index: 1000;
-        cursor: pointer;
+    .common-heading h2 {
+        font-size: 30px;
     }
-    .banner-slide .next-arrow{
-        width: 40px;
-        height: 40px; 
-        background: var(--primary_color);
-        position: absolute;
-        right: 10px;
-        bottom: 30px;
-        cursor: pointer;
+    .banner-text h1 {
+        font-size: 45px;
     }
-    .cycle-img::before {
-        content: "BEST";
-        width: 55px;
-        height: 55px;
-        font-size: 14px;
-        left: 10%;
-        top: 0px;
-        z-index: 3;
+    .hero-part::before {
+        width: 50px;
+        height: 50px;
+        left: 18%;
+        top: 36%;
+        transform: translate(-18%, -36%);
     }
-    .customer-slide .prev-arrow{
-        width: 45px;
-        height:45px;
-        background:var(--secondary_color);
-        position: absolute;
-        bottom: 10px;
-        right: 80px;
-        z-index: 1000;
-        cursor: pointer;
-    }
-    .customer-slide .next-arrow{
-        width: 45px;
-        height: 45px; 
-        background: var(--primary_color);
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-        cursor: pointer;
-    }
+    /* cycle part start */
+  
+    /* cycle part End */
+  
 }
 @media (min-width:576px) and (max-width:767.99px) {
-    .main-offcanvas .navbar-icon ul{
-        width: 35% !important;
-    }
-    #heading-section{
-        /* background-image: linear-gradient(-13deg, #ffffff 23%, #274d5a 23%); */
-        background: var(--primary_color);
+    /* hero part start */
+    .hero-part {
+        background: #274d5a ;
         position: relative;
+        z-index: 1;
     }
-    #heading-section::after{
-        display: none;
-    }
-    .banner-text p{
-        width: 65%;
-    }
-    .cycle-img::before {
-        content: "BEST";
-        width: 55px;
-        height: 55px;
-        font-size: 14px;
-        left: 0;
-        top: 45px;
-        z-index: 3;
-    }
-    .cycle-image-2::after {
-     
-        transform: translateX(0);
-    }
-    .form-part {
-        width: 90%;
-    }
-}
-@media (max-width:575px) {
-    .main-offcanvas .navbar-icon ul{
-        width: 
-        45% !important;
-        padding-left: 0px !important;
-    }
-    #heading-section{
-        /* background-image: linear-gradient(-13deg, #ffffff 23%, #274d5a 23%); */
-        background: var(--primary_color);
-        position: relative;
-    }
-    #heading-section::after{
-        display: none;
-    }
-    #store .heading p {
-        width: 100%;
-    }
-    #store .store-image{
-        width: 100% !important;
-    }
-    #store button {
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all linear 0.3s;
-    }
-    #news .heading p {
-        width: 100%;
-    }
-    .cycle-image-2 img {
-        transform: translateX(5px);
-    }
-    .cycle-image-2::after {
-        transform: translateX(0);
-    }
-    .cycle-img::before {
+    .hero-part::after {
        display: none;
     }
-    .form-part {
+    .banner-text h1 {
+        font-size: 45px;
+    }
+    /* hero part End */
+}
+@media (max-width:575px) {
+    .common-heading h2 {
+        font-size: 30px;
+    }
+    .hero-part {
+        background: #274d5a ;
+        position: relative;
+        z-index: 1;
+    }
+    .hero-part::after {
+        display: none;
+     }
+
+     .banner-text h1 {
+        font-size: 45px;
+    }
+    .banner-text p {
         width: 100%;
     }
-
+    .banner-image::before {
+       display: none;
+    }
+    
 }

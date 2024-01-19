@@ -8,6 +8,7 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     background: #ffffff;
+    overflow-x: hidden !important;
 }
 /* ^common css part start */
 *{

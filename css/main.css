@@ -59,7 +59,7 @@ img{
     line-height: 25px;
 }
 .btn:first-child:active{
-    border: none;
+    border: 1px solid transparent;
 }
 .form-control{
     background-clip: initial;

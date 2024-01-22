@@ -14,6 +14,13 @@
     .banner-text h1 {
         font-size: 45px;
     }
+    .hero-part::after {
+        display: none;
+     }
+    .main-navbar {
+        background: var(--primary_color);
+        
+    }
     .hero-part::before {
         width: 50px;
         height: 50px;
@@ -33,6 +40,9 @@
         position: relative;
         z-index: 1;
     }
+    .main-navbar {
+        background: var(--primary_color);
+    }
     .hero-part::after {
        display: none;
     }
@@ -44,6 +54,9 @@
 @media (max-width:575px) {
     .common-heading h2 {
         font-size: 30px;
+    }
+    .main-navbar {
+        background: var(--primary_color);
     }
     .hero-part {
         background: #274d5a ;
